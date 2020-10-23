@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Responsive Redesign</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sansita">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sarabun">
+  </head>
+
+  <!-- Sidenav taken from w3schools, navbar taken from bootstrap -->
+  <body>
+    <div id="sidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="sidenav-links">
+        <a class="a-active" href="#">Home</a>
+        <br>
+        <a href="#">COVID Policies</a>
+        <br>
+        <a href="#">Butchering</a>
+        <br>
+        <a href="#">Packages + Specials</a>
+        <br>
+        <a href="#">Imported Foods</a>
+        <br>
+        <a href="#">Product List</a>
+        <br>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div id="main">
+      <div class="page-upper">
+        <nav class="navbar navbar-expand-md navbar-light" id="nav">
+          <button class="navbar-toggler ml-auto" type="button" aria-expanded="false" aria-label="Toggle navigation">
+            <span style="font-size:5vw;color:#FFFEFD;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link" href="#">COVID Policies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Butchering</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Packages + Specials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Imported Foods</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-title-container">
+          <div>
+            <h1>Central Meat Market</h1>
+          </div>
+          <div>
+            <h3>Great quality meats at affordable prices</h3>
+          </div>
+          <div>
+            <p>113 Gano Street, Providence, RI 02906 | 401-751-6935</p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="page-lower">
+
+        <p id="notice">We are open! Please read our <a href="#">COVID policies</a> before visiting.</p>
+
+        <h2>Our Services</h2>
+
+        <div class="services-container">
+          <div class="service-container">
+            <h3>Butchering</h3>
+            <img alt="Butchered Meat" src="butchering.jpg">
+            <p>For 30 years, we’ve provided you with great poultry, pork, and beef, fresh cut to order!</p>
+          </div>
+          <div class="service-container">
+            <h3>Packages + Specials</h3>
+            <img alt="Flash Sale Special" src="special.jpg">
+
+            <p>Save money with our packages and specials for 100% USDA certiﬁed meat!</p>
+          </div>
+          <div class="service-container">
+            <h3>Imported Foods</h3>
+            <img alt="Imported Groceries" src="groceries.jpg">
+            <p>Get fresh groceries from Europe and Central America - gift certiﬁcates available!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("sidenav").style.width = "75%";
+      document.getElementById("main").style.right = "75%";
+    }
+
+    function closeNav() {
+      document.getElementById("sidenav").style.width = "0%";
+      document.getElementById("main").style.right = "0%";
+      document.getElementById("nav").style.top = "0";
+    }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>
